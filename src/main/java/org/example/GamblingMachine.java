@@ -10,7 +10,7 @@ You can try to "play the game". Run the program and program will tell you everyt
 Good Luck! (sadly you cant win anything :D, but it works!)
  */
 
-public class Main {
+public class GamblingMachine {
 
     //Setting variables, imports and lists.
     public static void main(String[] args) {
@@ -23,19 +23,19 @@ public class Main {
 
         System.out.print("Hello, please enter three numbers from 1 - 100 range to try win lottery jackpot!");
 
-        //for loop that scans your 3 inputted numbers from 1-100 and adding them to list of threeLotteryNumbers
-        for (int i = 0; i < 3; i++) {
+        //While loop that scans your 3 inputted numbers from 1-100 and adding them to list of threeLotteryNumbers
+        do {
             lotteryNumber = scanner.nextInt();
             if (lotteryNumber > 100) {
                 System.out.println("You inputted higher number than 100, try again.");
-                break;
+
             } else if (lotteryNumber < 1) {
                 System.out.println("You inputted lower number than 1, try again.");
-                break;
+
             } else {
                 threeLotteryNumbers.add(lotteryNumber);
             }
-        }
+        } while (threeLotteryNumbers.size() < 3);
         //When the Three lottery number's size is 3, there is a message and the program continues
         if (threeLotteryNumbers.size() == 3) {
             System.out.println("Your lucky numbers are :" + threeLotteryNumbers);
