@@ -36,9 +36,8 @@ public class GamblingMachine {
                 threeLotteryNumbers.add(lotteryNumber);
             }
         } while (threeLotteryNumbers.size() < 3);
-        //When the Three lottery number's size is 3, there is a message and the program continues
-        if (threeLotteryNumbers.size() == 3) {
-            System.out.println("Your lucky numbers are :" + threeLotteryNumbers);
+
+        System.out.println("Your lucky numbers are :" + threeLotteryNumbers);
 
             //While loop that generates 50 random numbers and adds them to listOfRandomGeneratedNumbers, every single number is unique (they cant repeat).
             do {
@@ -55,7 +54,7 @@ public class GamblingMachine {
             //Special command retainAll is matching the numbers of randoms and user's inputted numbers to one list = listOfRandomGeneratedNumbers
             listOfRandomGeneratedNumbers.retainAll(threeLotteryNumbers);
             System.out.println("Matched numbers in lottery are: " + listOfRandomGeneratedNumbers);
-        }
+
 
         //Checking by Ifs the size of list to write correct system.out by matched numbers in lists.
         if(listOfRandomGeneratedNumbers.size() == 0)
