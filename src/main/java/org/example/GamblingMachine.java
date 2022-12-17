@@ -38,7 +38,7 @@ public class GamblingMachine {
         List<Integer> threeLotteryNumbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Hello, please enter three numbers from 1 - 100 range to try win lottery jackpot!");
+        System.out.println("Hello, please enter three numbers from 1 - 100 range to try win lottery jackpot!");
 
         //While loop that scans your 3 inputted numbers from 1-100 and adding them to list of threeLotteryNumbers
         do {
